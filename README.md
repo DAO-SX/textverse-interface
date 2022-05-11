@@ -23,8 +23,8 @@
 
 ## Enjoin your journey
 
-## Developer fast start
-+ 1> .env
+## Developer quick start
++ 2> .env
 
 ```
 ALCHEMY_RINKEBY_API_URL=https://rinkeby.infura.io/v3/d3SSSd7279b43XXXXXXXX
@@ -36,26 +36,28 @@ REACT_APP_NFT_STORAGE_API_KEY=iOiXXXXXInR5XXIkXXeyJzdWIiOiJkaWQ6ZXRXXXXX
 ```
 + How to create or get these keys: [start readme](https://github.com/jhfnetboy/filecoin_nft_starter)
 
-+ 2> react init
-+ create a empty git repo
-+ run in your mac:
++ 1> react init
++ create a empty git repo in github:[repo](https://github.com/DAO-SX/textverse-interface)
++ run in your mac terminal:
 + 
 ```
-npx create-react-app tint 
-
-```
-
-
-```
-npx create-react-app tinterface
-cd tinterface
+npx create-react-app tint
+cd tint
 git init
 git commit -m "react init commit"
 git branch -M main
-git remote add origin git@github.com:DAO-SX/TInterface.git
- git push -u origin main
+git remote add origin git@github.com:DAO-SX/textverse-interface.git
+git push -u origin main
+```
++ and then 
+```
+npx hardhat
 ```
 
++ 3>
+
+
+### git cheat snip
 …or create a new repository on the command line
 echo "# textverse-interface" >> README.md
 git init
@@ -70,7 +72,7 @@ git branch -M main
 git push -u origin main
 …or import code from another repository
 You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
-+ 3>
+
 
 
 
