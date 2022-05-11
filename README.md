@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# TInterface
++ We will build the v0.01 of Textverse interface.
++ About TInterface definition:[Engine Interface](https://github.com/DAO-SX/ethos/blob/main/docs/product/architechure.md)
++ Product will provide :
++ Landing page, login with metamask.
++ Mint your own vNFT(hero NFT, will belongs to TID, DID of Textverse, named tNFT).
++ Join the game and get the newbie package in the default Metaverse.
+  
+ ## Landing page
++ Have't intergrated with SIWE, later.
++ Just login with wallet.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Mint vNFT
++ Can mint your name and view basic JSON file.
++ Will store to NFT.storage.
++ Calculate the CID and store into ON Chain Contract for your Assets.
+## Load and Save
++ Join the Game, will load the vNFT of your wallet.
++ load newest CID and the JSON file into game.
++ If you fight with monster or get materials and save game manually, will need some gas and token(LToken) cost.
++ You will store your assets to IPFS and Chain.
++ If you get a **Unique Artifact**, it will be a NFT and will belongs to your Metamask wallet address, **do not need to save manually**.
 
-## Available Scripts
+## Enjoin your journey
 
-In the project directory, you can run:
+## Developer fast start
++ 1> .env
 
-### `npm start`
+```
+ALCHEMY_RINKEBY_API_URL=https://rinkeby.infura.io/v3/d3SSSd7279b43XXXXXXXX
+METAMASK_RINKEBY_PRIVATE_KEY=71719XXXa1c9bXXXXXXX08a009XXXXXXXXX
+ETHERSCAN_API_KEY=MZXXXXFX482XXXXXXXQ6V6B4XXXXS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+REACT_APP_CONTRACT_ADDRESS=0xbfD7c7Cf07DA4114D2cFa477a6A38E335Aa8Fb74
+REACT_APP_NFT_STORAGE_API_KEY=iOiXXXXXInR5XXIkXXeyJzdWIiOiJkaWQ6ZXRXXXXX
+```
++ How to create or get these keys: [start readme](https://github.com/jhfnetboy/filecoin_nft_starter)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
++ 2> react init
++ create a empty git repo
++ run in your mac:
++ 
+```
+npx create-react-app tint 
 
-### `npm test`
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+```
+npx create-react-app tinterface
+cd tinterface
+git init
+git commit -m "react init commit"
+git branch -M main
+git remote add origin git@github.com:DAO-SX/TInterface.git
+ git push -u origin main
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+…or create a new repository on the command line
+echo "# textverse-interface" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:DAO-SX/textverse-interface.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin git@github.com:DAO-SX/textverse-interface.git
+git branch -M main
+git push -u origin main
+…or import code from another repository
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
++ 3>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
