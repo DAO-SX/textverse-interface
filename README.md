@@ -24,18 +24,6 @@
 ## Enjoin your journey
 
 ## Developer quick start
-+ 2> .env
-
-```
-ALCHEMY_RINKEBY_API_URL=https://rinkeby.infura.io/v3/d3SSSd7279b43XXXXXXXX
-METAMASK_RINKEBY_PRIVATE_KEY=71719XXXa1c9bXXXXXXX08a009XXXXXXXXX
-ETHERSCAN_API_KEY=MZXXXXFX482XXXXXXXQ6V6B4XXXXS
-
-REACT_APP_CONTRACT_ADDRESS=0xbfD7c7Cf07DA4114D2cFa477a6A38E335Aa8Fb74
-REACT_APP_NFT_STORAGE_API_KEY=iOiXXXXXInR5XXIkXXeyJzdWIiOiJkaWQ6ZXRXXXXX
-```
-+ How to create or get these keys: [start readme](https://github.com/jhfnetboy/filecoin_nft_starter)
-
 + 1> react init
 + create a empty git repo in github:[repo](https://github.com/DAO-SX/textverse-interface)
 + run in your mac terminal:
@@ -49,12 +37,26 @@ git branch -M main
 git remote add origin git@github.com:DAO-SX/textverse-interface.git
 git push -u origin main
 ```
-+ and then 
++ and then hardhat init
 ```
 npx hardhat
-```
+init in your prj directory
++ 2> .env
 
-+ 3>
+```
+ALCHEMY_RINKEBY_API_URL=https://rinkeby.infura.io/v3/d3SSSd7279b43XXXXXXXX
+METAMASK_RINKEBY_PRIVATE_KEY=71719XXXa1c9bXXXXXXX08a009XXXXXXXXX
+ETHERSCAN_API_KEY=MZXXXXFX482XXXXXXXQ6V6B4XXXXS
+
+REACT_APP_CONTRACT_ADDRESS=0xbfD7c7Cf07DA4114D2cFa477a6A38E335Aa8Fb74
+REACT_APP_NFT_STORAGE_API_KEY=iOiXXXXXInR5XXIkXXeyJzdWIiOiJkaWQ6ZXRXXXXX
+```
++ How to create or get these keys: [start readme](https://github.com/jhfnetboy/filecoin_nft_starter)
+
+
++ 3> hardhat config
+```
+```
 
 
 ### git cheat snip
